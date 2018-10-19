@@ -1,0 +1,64 @@
+{
+    "scopeName": "source.lsgl",
+    "fileTypes": [
+        ".lsgl"
+    ],
+    "patterns": [
+        {
+            "match": "\\b(break|case|continue|default|do|else|for|goto|if|return|switch|while|print|or|&)\\b",
+            "name": "keyword.control.lsgl"
+        },
+        {
+            "match": "\\b(var)\\b",
+            "name": "support.type"
+        },
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double"
+        },
+       
+        {
+            "match": "\\b(null|true|false|TRUE|FALSE)\\b",
+            "name": "constant.language.lsgl"
+        },
+        {
+            "match": "\\b((0(x|X)[0-9a-fA-F]([0-9a-fA-F']*[0-9a-fA-F])?)|(0(b|B)[01]([01']*[01])?)|(([0-9]([0-9']*[0-9])?\\.?[0-9]*([0-9']*[0-9])?)|(\\.[0-9]([0-9']*[0-9])?))((e|E)(\\+|-)?[0-9]([0-9']*[0-9])?)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b",
+            "name": "constant.numeric.lsgl"
+        },
+        {
+            "match": "=|!=|<=|>=|==|<|>",
+            "name": "keyword.operator.comparison.lsgl"
+        },
+        {
+            "begin": "/\\*",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.comment.begin.lsgl"
+                }
+            },
+            "end": "\\*/",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.comment.end.lsgl"
+                }
+            },
+            "name": "comment.block.lsgl"
+        },
+        {
+            "begin": "/\\*",
+            "captures": {
+                "0": {
+                    "name": "punctuation.definition.comment.lsgl"
+                }
+            },
+            "end": "\\*/",
+            "name": "comment.block.lsgl"
+        },
+        {
+            "begin": "//",
+            "end": "\\n",
+            "name": "comment.line.double-slash.lsgl"
+        }
+    ]
+}

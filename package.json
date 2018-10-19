@@ -1,0 +1,21 @@
+{
+    "name": "Linux System GUI Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": ">=0.9.0-pre.1"
+    },
+    "publisher": "me",
+    "contributes": {
+        "languages": [{
+            "id": "lsgl",
+            "aliases": ["lsgl"],
+            "extensions": [".lsgl"],
+            "configuration":"./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lsgl",
+            "scopeName": "source.lsgl",
+            "path": "./syntaxes/lsgl.tmLanguage.json"
+        }]
+    }
+}
